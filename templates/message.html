@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+
+{% block title %}
+  Send-to-kindle
+{% endblock%}
+
+{% block main %}
+  <p class="message">{{ message }}</p>
+  <form action="/" method="GET">
+    <input type="submit" value="Back" class="button">
+  </form>
+{% endblock %}
