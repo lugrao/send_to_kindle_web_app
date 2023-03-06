@@ -6,4 +6,18 @@
 
 {% block main %}
   <h1>Send-to-kindle web app</h1>
+  <form
+    id="url"
+    action="/url"
+    method="POST"
+    autocomplete="on"
+    >
+    <input type="text" name="url" placeholder="URL">
+    <br>
+    <br>
+    <input type="text" name="password" placeholder="password">
+    <br>
+    <br>
+    <input type="submit" value="Send">
+  </form>
 {% endblock %}
