@@ -10,6 +10,7 @@ from email import encoders
 from email.mime.base import MIMEBase
 from email.mime.multipart import MIMEMultipart
 from readability import Document
+from urllib.parse import urlparse
 
 
 load_dotenv()
@@ -47,7 +48,7 @@ def html2epub2kindle(url):
     epub_article = epub.EpubBook()
     epub_article.set_title(html_article.title())
     epub_article.set_language(lang)
-    epub_article.add_author("lugrao's script")
+    epub_article.add_author(urlparse(url).netloc)
 
     # create chapter
     chapter = epub.EpubHtml(
