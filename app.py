@@ -20,13 +20,12 @@ def html2kindle():
     if not url:
         return render_template("message.html", message="You must provide a URL.")
 
-    
     if password != os.environ.get("APP_PASSWORD"):
         return render_template("message.html", message="Incorrect password.")
 
     html2epub2kindle(url)
-    
+
     return render_template(
         "message.html",
         message="The article was sent to your kindle. Apparently."
-        )
+    )
