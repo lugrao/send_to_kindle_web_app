@@ -25,13 +25,13 @@ cd send_to_kindle_web_app
 Create a Python virtual environment:
 
 ```
-python3 -m venv new_virtual_env
+python3 -m venv venv
 ```
 
 Activate the virtual environment:
 
 ```
-source new_virtual_env/bin/activate
+source venv/bin/activate
 ```
 
 Install dependencies:
@@ -57,3 +57,17 @@ flask --app app run
 
 You're good to go. Open the app in your browser, paste some article's URL,
 type your password and send the article to your Kindle.
+
+## Deploy to Vercel
+
+You can easily deploy this app to Vercel.
+
+Log in to the Vercel CLI. In the project's root directory, type:
+
+```
+vercel
+```
+
+Follow the steps.
+
+Once it's all done, you can use the app from the URL Vercel gave you.
