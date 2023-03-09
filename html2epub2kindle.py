@@ -17,7 +17,7 @@ load_dotenv()
 
 # E-mail credentials
 SENDER_ADDRESS = os.environ.get("SENDER_ADDRESS")
-PASSWORD = os.environ.get("PASSWORD")
+SENDER_PASSWORD = os.environ.get("SENDER_PASSWORD")
 RECEIVER_ADDRESS = os.environ.get("RECEIVER_ADDRESS")
 
 
@@ -88,7 +88,7 @@ def html2epub2kindle(url):
     with smtplib.SMTP_SSL(
         "smtp.gmail.com", port, context=context
     ) as server:
-        server.login(SENDER_ADDRESS, PASSWORD)
+        server.login(SENDER_ADDRESS, SENDER_PASSWORD)
         server.sendmail(SENDER_ADDRESS, RECEIVER_ADDRESS, text)
     print("\nDone\n")
 
