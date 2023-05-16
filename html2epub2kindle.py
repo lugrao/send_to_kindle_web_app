@@ -4,7 +4,6 @@ import re
 import requests
 import smtplib
 import ssl
-from dotenv import load_dotenv
 from ebooklib import epub
 from email import encoders
 from email.mime.base import MIMEBase
@@ -12,8 +11,6 @@ from email.mime.multipart import MIMEMultipart
 from readability import Document
 from urllib.parse import urlparse
 
-
-load_dotenv()
 
 # E-mail credentials
 SENDER_ADDRESS = os.environ.get("SENDER_ADDRESS")
