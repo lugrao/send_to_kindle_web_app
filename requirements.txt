@@ -13,6 +13,7 @@ itsdangerous==2.2.0
 Jinja2==3.1.5
 langid==1.1.6
 lxml==5.3.1
+lxml_html_clean==0.4.1
 MarkupSafe==3.0.2
 numpy==2.2.3
 pycodestyle==2.12.1
