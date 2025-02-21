@@ -1,7 +1,10 @@
+from dotenv import load_dotenv
 from flask import Flask, render_template, request
 from flask_login import LoginManager
 from html2epub2kindle import html2epub2kindle
 import os
+
+load_dotenv()
 
 login_manager = LoginManager()
 app = Flask(__name__)
