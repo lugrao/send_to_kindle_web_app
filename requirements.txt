@@ -17,6 +17,7 @@ lxml_html_clean==0.4.1
 MarkupSafe==3.0.2
 numpy==2.2.3
 pycodestyle==2.12.1
+python-dotenv==1.0.1
 readability-lxml==0.8.1
 requests==2.32.3
 six==1.17.0
